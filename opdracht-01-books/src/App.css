@@ -83,7 +83,7 @@ ul{
   background-color: #cae1dd;
 }
 
-ul li a {
+li{
   display: block;
   color: white;
   text-align: center;
@@ -91,7 +91,8 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+li:hover {
   background-color: #ffffff;
+  color: black;
 }
 
