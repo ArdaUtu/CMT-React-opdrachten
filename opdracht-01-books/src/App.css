@@ -96,3 +96,8 @@ li:hover {
   color: black;
 }
 
+
+.Layout-list{
+  width: 80vw;
+  margin: 0 auto;
+}

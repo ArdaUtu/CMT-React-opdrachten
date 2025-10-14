@@ -1,14 +1,16 @@
 import './App.css'
 import BookList from './components/Booklist';
 import Header from './components/Header';
+import Layout from './components/Layout';
 
 
 function App() {
  return (
   <>
-  
+     <Layout>
      <Header/>
      <BookList/>
+     </Layout>
     </>
   )
 }
