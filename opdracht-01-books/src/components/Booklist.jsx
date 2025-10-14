@@ -1,21 +1,37 @@
-import Boekimage from '../assets/images/book-1.png'
-import Boekimage2 from '../assets/images/book-2.png'
-import Boekimage3 from '../assets/images/book-3.png'
-import { useState } from "react";
+
 import Book from './Book'
+import { useState } from "react";
 
+const BookList = () => {
+  const [books, setbooks] = useState([
+    {
+      title: 'Harry Potter',
+      author: 'J.K. Rowling',
+      image: './images/book-1.png',
+    },
+    {
+      title: 'Fantasia VI',
+      author: 'Geronimo Stilton',
+      image: './images/book-2.png',
+    },
+    {
+      title: 'The Hunger Games',
+      author: 'Suzanne Collins',
+      image: './images/book-3.png',
+    },
+  ]);
 
-
-function BookList() {
- return (
-  <>
-      <div class ="BookBody">
-      <Book img={Boekimage} title="Harry Potter and sorcerers" author= "Joanne Rowling"/>
-      <Book img={Boekimage2} title="Fantasia VI" author= "Geronimo Stilton"/>
-      <Book img={Boekimage3} title="THE HUNGER GAMES" author= "Suzanne Collins"/>
-      </div>
-    </>
-  )
-}
+  return (
+    <section className="BookBody">
+      {books.map((book) => (
+        <Book
+          title={book.title}
+          author={book.author}
+          img={book.image}
+        />
+      ))}
+    </section>
+  );
+};
 
 export default BookList;
