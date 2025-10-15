@@ -1,9 +1,10 @@
-
-import Book from './Book'
-import { useState } from "react";
+// BookList.jsx
+import React, { useState } from 'react';
+import Book from './Book';
+import BookCounter from './BookCounter';
 
 const BookList = () => {
-  const [books, setbooks] = useState([
+  const [books, setBooks] = useState([
     {
       title: 'Harry Potter',
       author: 'J.K. Rowling',
@@ -23,11 +24,17 @@ const BookList = () => {
 
   return (
     <section className="BookBody">
-      {books.map((book) => (
+      <BookCounter aantal={books.length} />
+
+    
+      {books.map((book, index) => (
         <Book
+          key={index}
           title={book.title}
           author={book.author}
           img={book.image}
+          button={book.aantalKeerGelezen} 
+          btn={book.Btn} 
         />
       ))}
     </section>

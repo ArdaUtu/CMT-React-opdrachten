@@ -74,6 +74,8 @@ position: absolute;
 
 }
 
+
+
 ul li {
   float: left;
 }
@@ -100,10 +102,20 @@ li:hover {
 }
 
 .Header-list{
-width: 78.8%; 
+width: 96.5%; 
 }
 
 .Layout-list{
   width: 80vw;
   margin: 0 auto;
+}
+
+
+
+.BookBody h2 {
+  width: 100%;           
+  text-align: center;      
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
 }
