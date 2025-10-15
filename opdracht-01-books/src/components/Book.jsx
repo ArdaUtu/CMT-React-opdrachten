@@ -21,7 +21,7 @@ function verlaagTeller(){
       <img class ="Image" src={img} alt={title} />
       <h2 class ="TitleText">{title}</h2>
       <button onClick={verhoogTeller}>Keer gelezen: {aantalKeerGelezen}</button>
-      <button onClick={verlaagTeller}>verlaagt: {aantalKeerGelezen}</button>
+      <button onClick={verlaagTeller}>verlagen: {aantalKeerGelezen}</button>
       <p class ="AuthorText">{author}</p>
     </section>
   );

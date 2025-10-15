@@ -40,3 +40,46 @@
 .read-the-docs {
   color: #888;
 }
+
+.Image{
+object-fit: cover;
+  height: 200px;
+  width: 40%;
+  border: 0.25rem solid #c59d5f;
+}
+.titelh2{
+font-size: 50px;
+}
+
+.menu-item{
+  display: flex;
+  flex-direction: row;
+}
+.price{
+color: #c59d5f;
+
+}
+.item-text {
+  color: #617d98;
+
+}
+
+.item-info header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px dotted;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  float: inline-start;
+}
+
+.section-center{
+display: grid;
+grid-template-columns: repeat(2, 1fr); 
+}
+
+.item-info {
+  width: 200px;
+}
+
+

@@ -1,11 +1,11 @@
+import MenuList from './components/Menulist.jsx'
 import './App.css'
 
 function App() {
 
   return (
-    <>
-      <h1>Opdracht 4 - Menu</h1>
-    </>
+      <MenuList/>
+  
   )
 }
 
