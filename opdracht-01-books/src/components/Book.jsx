@@ -16,7 +16,7 @@ function verhoogTeller(){
     <section className="book-list">
       <img className ="Image" src={img} alt={title} />
       <h2 className ="TitleText">{title}</h2>
-      <button onClick={verhoogTeller}>Keer gelezen: {aantalKeerGelezen}</button>
+      <button className="ButtonBook" onClick={verhoogTeller}>Keer gelezen: {aantalKeerGelezen}</button>
       <p className ="AuthorText">{author}</p>
     </section>
   );
