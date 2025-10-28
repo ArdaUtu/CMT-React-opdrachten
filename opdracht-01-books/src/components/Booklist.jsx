@@ -1,5 +1,5 @@
 // BookList.jsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Book from './Book';
 import BookCounter from './BookCounter';
 

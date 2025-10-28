@@ -14,10 +14,10 @@ function verhoogTeller(){
 
   return (
     <section className="book-list">
-      <img class ="Image" src={img} alt={title} />
-      <h2 class ="TitleText">{title}</h2>
+      <img className ="Image" src={img} alt={title} />
+      <h2 className ="TitleText">{title}</h2>
       <button onClick={verhoogTeller}>Keer gelezen: {aantalKeerGelezen}</button>
-      <p class ="AuthorText">{author}</p>
+      <p className ="AuthorText">{author}</p>
     </section>
   );
 };

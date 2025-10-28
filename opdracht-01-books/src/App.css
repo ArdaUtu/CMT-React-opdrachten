@@ -90,7 +90,6 @@ ul{
 
 li{
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -102,7 +101,7 @@ li:hover {
 }
 
 .Header-list{
-width: 96.5%; 
+width: 100%;
 }
 
 .Layout-list{
