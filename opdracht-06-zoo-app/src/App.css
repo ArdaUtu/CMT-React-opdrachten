@@ -40,3 +40,57 @@
 .read-the-docs {
   color: #888;
 }
+
+.AnimalNaam{
+color: rgb(101, 65, 7);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.ImageDier{
+background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  width: 20%;
+  margin-top: 50px;
+}
+
+.h2Animal{
+font-size: 50px;
+color: #5b380daa;
+}
+
+body{
+background-color: rgb(254, 243, 208); 
+height: 3000px;
+}
+
+
+.ButtonDier{
+border-style: none;
+  color: rgb(255, 255, 255);
+  background-color: #e8942d;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 50px;
+  display: block;
+  position: absolute;
+  left: 41.5%;
+  width: 17%;
+  text-align: center;
+}
+
+.ButtonDier:hover{
+border-style: none;
+color: black  ;
+background-color: rgb(255, 255, 255);
+}
+
+
+
