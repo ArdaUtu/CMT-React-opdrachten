@@ -21,12 +21,12 @@ const DetailPage = () => {
       <button onClick={() => navigate('/')}>
         ← Terug naar home
       </button>
-      
-      <h1>{animal.name}</h1>
+      <br></br>
       <img className='ImageDier' src={animal.imageUrl} alt="" />
-      <p>Leefomgeving: {animal.habitat}</p>
-      <p>Dieet: {animal.diet}</p>
-      <p>Beschrijving: {animal.description}</p>
+      <h1 class = "NameAnimal">{animal.name}</h1>
+      <p class ="TextClass">Leefomgeving: {animal.habitat}</p>
+      <p class ="TextClass">Dieet: {animal.diet}</p>
+      <p class ="BeschrijvingClass">Beschrijving: {animal.description}</p>
     </section>
   );
 };

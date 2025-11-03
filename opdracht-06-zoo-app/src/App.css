@@ -59,9 +59,22 @@ background-color: #fff;
   margin-top: 50px;
 }
 
+.TextClass{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.BeschrijvingClass{
+  color: rgb(101, 65, 7);
+}
+
 .h2Animal{
 font-size: 50px;
 color: #5b380daa;
+}
+
+.NameAnimal{
+  color: #5b380daa;
 }
 
 body{

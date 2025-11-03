@@ -1,7 +1,7 @@
 const Card = ({ animals, onShowDetail }) => {
 
   return (
-    <section className="CardBody">
+    <section>
       <h2 class = "AnimalNaam">{animals.name}</h2>
       <img class ="ImageDier" src={animals.imageUrl} alt="" />
       <button class = "ButtonDier" onClick={() => onShowDetail(animals.id)}>
