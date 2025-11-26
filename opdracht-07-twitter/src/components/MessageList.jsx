@@ -2,10 +2,12 @@ import  Message from './Message'
 
 const MessageList = ({name, message}) => {
     return (  
-    <>
-    <Message name={name} message={message}/>
+        <div >
+            {message.map((Lijstje) => (
+                <ToDo name={name} list={Lijstje} />
+            ))}
 
-    </>
+        </div>
     );
 };
  

@@ -1,12 +1,18 @@
+import { useState } from "react";
 import './App.css'
+import CreateToDo from "./components/CreateToDo";
+import ToDoList from "./components/ToDoList";
 
 function App() {
+  const [textInput, setTextInput] = useState('')
+  const [message, setMessage] = useState([])
 
   return (
     <>
-      <h1>Opdracht 8 - To Do</h1>
+      <CreateToDo textInput={textInput} setMessage={setMessage} setTextInput={setTextInput} message={message} />
+      <ToDoList list={message} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
