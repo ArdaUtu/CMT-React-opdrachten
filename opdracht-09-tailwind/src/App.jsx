@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-    <section className='text-2xl bg-gray-100 h-300'>
+    <section className='text-2xl bg-gray-100 h-300 dark:bg-black-100 h-300'>
       <img className="block mx-auto " src="./images/image.png" alt=""/>
       <img className="block mx-auto mt-10 rounded-md" src="./images/image1.png" alt=""/>
       <section className='block mx-auto mt-8 w-100'>
