@@ -5,7 +5,18 @@ import Card from '../components/Card';
 
 const HomePage = () => {
   const navigate = useNavigate();
-  const [animalList, setanimalsList] = useState(animals);
+
+
+  const [animalList] = useState(animals);
+  const [searchInput, setSearchInput] = useState("");
+
+  const handleChange = (e) => {
+    setSearchInput(e.target.value);
+  };
+
+  const filteredAnimals = animalList.filter((animal) =>
+    animal.name.toLowerCase().includes(searchInput.toLowerCase())
+  );
 
   const goToDetail = (animalsId) => {
     navigate(`/animal/${animalsId}`);
@@ -13,19 +24,25 @@ const HomePage = () => {
 
   return (
     <section>
-      <h2 class ="h2Animal">Zoo app</h2>
-      
-      {animalList.map(animal => (
+      <h2 className="h2Animal">Zoo app</h2>
+
+      <div className="search">
+        <input
+          type="text"
+          placeholder="zoek een dier op..."
+          onChange={handleChange}
+          value={searchInput}
+        />
+      </div>
+
+
+      {filteredAnimals.map(animal => (
         <Card
           key={animal.id}
           animals={animal}
           onShowDetail={goToDetail}
         />
-      ))
-      
-      }
-
-    
+      ))}
     </section>
   );
 };

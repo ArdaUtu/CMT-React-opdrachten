@@ -28,10 +28,10 @@ const BookList = () => {
         />
       </div>
 
-      {/* Counter voor aantal gefilterde boeken */}
+     
       <BookCounter aantal={filteredBooks.length} />
 
-      {/* Boekweergave */}
+     
       {filteredBooks.map((book, index) => (
         <Book
           key={index}
