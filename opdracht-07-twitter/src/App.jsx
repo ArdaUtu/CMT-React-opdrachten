@@ -11,7 +11,7 @@ let name = "Arda";
   return (
   <>
     <CreateMessage textInput={textInput} setMessage={setMessage} setTextInput={setTextInput} message={message} />
- <MessageList name={name} message={message}/>
+    <MessageList name={name} message={message}/>
    </>
  
   );
