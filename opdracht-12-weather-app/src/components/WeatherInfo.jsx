@@ -2,12 +2,12 @@ const WeatherInfo = ({ weather }) => {
   return (
     <div>
       {weather ? (
-        <section>
+        <section className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 inline-block text-left">
           <h1>{weather.name}</h1>
-          <p>Temperatuur: {weather.main.temp} °C</p>
-          <p>Weer: {weather.weather[0].description}</p>
+          <p>Temperatuur: {Math.floor(weather.main.temp)} °C</p>
+          <p>Gevoelstemperatuur: {Math.floor(weather.main.feels_like)} °C</p>
           <p>Luchtvochtigheid: {weather.main.humidity} %
-           <p>wind snelheid: {weather.wind.speed} m/s</p>
+           <p>wind snelheid: {Math.floor(weather.wind.speed)} m/s</p>
           </p>
         </section>
       ) : (
