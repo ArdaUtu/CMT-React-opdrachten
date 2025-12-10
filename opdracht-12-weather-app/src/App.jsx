@@ -31,7 +31,7 @@ function App() {
         onChange={(e) => setCity(e.target.value)}
         value={city}
       />
-      <div className='bg-blue-500 text-white px-4 py-2 rounded cursor-pointer w-24 text-center mx-auto hover:bg-white hover:text-blue-500'>
+      <div className='bg-blue-500 text-white px-4 py-2 rounded cursor-pointer w-24 text-center mx-auto hover:bg-white hover:text-blue-50'>
       <button onClick={fetchWeather}>
         Zoek
       </button>

@@ -8,11 +8,14 @@ const BookList = () => {
   const [books, setBooks] = useState(booksData);
   const [selectedCategory, setSelectedCategory] = useState('Alle');
 
+  
+
   const categories = [
     'Alle',
     'Fantasy',
     'Avontuur',
     'Sciencefiction',
+    'liked'
   ];
 
   const handleChange = (e) => {
@@ -52,6 +55,9 @@ const BookList = () => {
           name="search"
         />
       </div>
+
+
+
 
       {/* Dropdown filter */}
       <div className="filter">

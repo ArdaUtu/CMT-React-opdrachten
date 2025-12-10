@@ -1,26 +1,33 @@
 import { useState } from "react";
 
 const Book = ({ title, author, image, category }) => {
+  // Stap 2: liked state
+  const [liked, setLiked] = useState(false);
 
-  const [aantalKeerGelezen, setAantalKeerGelezen] = useState(0);
-
-  function verhoogTeller() {
-    setAantalKeerGelezen(aantalKeerGelezen + 1);
-  }
+  // Stap 3: toggle functie
+  const toggleLike = () => {
+    setLiked(!liked);
+  };
 
   return (
-    <section className="book-list">
-      <img className="Image" src={image} alt={title} />
+    <div className="book">
+      <img src={image} alt={title} />
+      <h2>{title}</h2>
+      <p>{author}</p>
+      <p className="category">{category}</p>
 
-      <h2 className="TitleText">{title}</h2>
+      {/* Stap 4: favorite section */}
+      <div className="favorite-section">
+        <button className="heart-btn" onClick={toggleLike}>
+          {liked ? "❤️" : "🤍"}
+        </button>
 
-      <button className="ButtonBook" onClick={verhoogTeller}>
-        Keer gelezen: {aantalKeerGelezen}
-      </button>
-
-      <p className="AuthorText">{author}</p>
-      <p className="CategoryText">Categorie: {category}</p>
-    </section>
+        {/* Stap 5: conditionele bevestiging */}
+        {liked && (
+          <p className="favorited-text">Toegevoegd aan favorieten</p>
+        )}
+      </div>
+    </div>
   );
 };
 
