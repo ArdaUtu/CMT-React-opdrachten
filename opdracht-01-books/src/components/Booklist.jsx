@@ -78,6 +78,7 @@ const BookList = () => {
       {/* Aantal boeken teller */}
       <BookCounter aantal={searchedBooks.length} />
 
+<div className="bookContainer">
       {/* Lijst van boeken */}
       {searchedBooks.map((book, index) => (
         <Book
@@ -86,8 +87,14 @@ const BookList = () => {
           author={book.author}
           image={book.image}
           category={book.category}
+          description={book.description}
+          year={book.year}
+          pages={book.pages}
         />
       ))}
+
+</div>
+  
 
     </section>
   );
