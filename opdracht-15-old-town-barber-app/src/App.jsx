@@ -1,12 +1,16 @@
-import './App.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function App() {
+import UserProfile from "./components/UserProfile";
+import BookingForm from "./components/BookingForm";
+import ShopInfo from "./components/ShopInfo";
 
+export default function App() {
   return (
     <>
-      <h1>Opdracht 13 - Flashcard Quiz</h1>
+      <ShopInfo />
+      <UserProfile />
+      <BookingForm />
     </>
   );
 }
-
-export default App;
