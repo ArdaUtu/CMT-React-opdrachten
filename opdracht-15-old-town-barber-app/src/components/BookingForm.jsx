@@ -1,9 +1,11 @@
-import { services } from "./ShopInfo";
+import { shopInfo } from "./ShopInfo";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { getAppointments, setAppointments } from "../utils/localStorage";
 
 export default function BookingForm({ profile }) {
+  const services = shopInfo.services;
+
   const [serviceId, setServiceId] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
